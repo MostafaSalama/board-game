@@ -1,0 +1,149 @@
+nav {
+  background: url("./../assets/flash-2568383_1920.jpg");
+}
+
+nav a {
+  color: #fff;
+  font-size: large;
+}
+nav a:hover {
+  color: gold;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: indianred;
+}
+
+.player {
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px;
+}
+.player p {
+  font-size: large;
+  color: white;
+}
+.player__icon {
+  min-width: 100px;
+  width: 150px;
+  max-width: 200px;
+}
+
+.game-container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  margin: 0px 0px;
+}
+.game-container .grid-item {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  text-align: center;
+  border: 2px solid rgba(128, 128, 128, 0.2);
+  margin: 1px;
+}
+@media screen and (min-width: 560px) {
+  .game-container .grid-item {
+    padding: 15px 10px;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.unavailable {
+  background-image: url("./../assets/wall.png");
+  background-size: cover;
+}
+
+.main {
+  background-image: url("./../assets/halloween.png");
+  background-size: cover;
+}
+
+.weapon1 {
+  background-image: url("./../assets/sword.svg");
+  background-size: cover;
+}
+
+.weapon2 {
+  background-image: url("./../assets/sword2.png");
+  background-size: cover;
+}
+
+.weapon3 {
+  background-image: url("./../assets/titan2.png");
+  background-size: cover;
+}
+
+.weapon4 {
+  background-image: url("./../assets/titan1.png");
+  background-size: cover;
+}
+
+.player_one {
+  background-image: url("./../assets/mikasa.png");
+  background-size: cover;
+  border: 2px solid dodgerblue;
+}
+
+.player_two {
+  background-image: url("./../assets/levay.png");
+  background-size: cover;
+  border: 2px solid red;
+}
+
+.box-hover:hover {
+  background-color: #1c7430;
+  cursor: pointer;
+}
+
+.fight {
+  display: none;
+}
+
+.box-hover:hover {
+  background-color: #1c7430;
+  cursor: pointer;
+}
+
+.fight__bg1 {
+  background-image: url("./../assets/bg2.jpg");
+  background-size: cover;
+  min-height: 400px;
+  margin-top: 15px;
+}
+
+.fight__bg2 {
+  background-image: url("./../assets/bg1.jpg");
+  background-size: cover;
+  min-height: 400px;
+  margin-top: 15px;
+}
+
+.fightbg-false {
+  display: none;
+}
+
+#game-over {
+  display: none;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+#game-over > h1 {
+  color: darkblue;
+  font-style: italic;
+}
+#game-over #winner-name {
+  color: #ffc107;
+}
+#game-over > svg {
+  width: 500px;
+}
+
+/*# sourceMappingURL=style.css.map */

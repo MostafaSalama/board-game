@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Welcome To The Most Simple And Funny Turn Board Game</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-<h1>Would you like to play now</h1>
-<div>
+<h1 class="bg-info p-3 text-center">Would you like to play now</h1>
+<div class="text-center mb-2">
     <label for="player1_name">Player 1 Name</label>
-    <input type="text" name="player1_name" id="player1_name" value="player 1" />
+    <input class="" type="text" name="player1_name" id="player1_name" value="player 1" />
 </div>
-<div>
-    <label for="player2_name">Player 2 Name</label>
-    <input type="text" name="player1_name" id="player2_name" value="player 2" />
+<div class="text-center mb-2">
+        <label for="player2_name">Player 2 Name</label>
+        <input class="" type="text"
+               name="player1_name" id="player2_name" value="player 2" />
 </div>
+<div class="text-center"><button id="start-game-btn" class="btn btn-primary">Start The Game</button></div>
 <h2>Game Rules</h2>
 <ul>
     <li>Each player can move 3 spaces horizontally or vertically.</li>
@@ -42,5 +45,15 @@
 </ul>
 <div>
 </div>
+<script>
+    const startGameButton = document.getElementById('start-game-btn') ;
+    startGameButton.addEventListener('click',()=>{
+        const player1Name = document.getElementById('player1_name').value ;
+        const player2Name = document.getElementById('player2_name').value ;
+        localStorage.setItem('player1_name',player1Name || 'Player1');
+        localStorage.setItem('player2_name',player2Name || 'Player2');
+        window.location.pathname = '/game.html' ;
+    })
+</script>
 </body>
 </html>

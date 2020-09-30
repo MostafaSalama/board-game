@@ -1,3 +1,10 @@
+// we get the names of the players
+const player1Name = localStorage.getItem('player1_name') ;
+const player2Name = localStorage.getItem('player2_name') ;
+const player1NameElement = document.getElementById('player1_name');
+const player2NameElement = document.getElementById('player2_name');
+player1NameElement.textContent = player1Name ;
+player2NameElement.textContent = player2Name ;
 const player1HealthElement = document.getElementById('health1');
 const player2HealthElement = document.getElementById('health2');
 
@@ -8,8 +15,8 @@ const Player1PowerElement = document.querySelector('#power1');
 const Player2PowerElement = document.querySelector('#power2');
 
 // player 1 and 2 weapons images
-const player1WepaonImage = document.getElementById('player_1_weapon_image');
-const player2WepaonImage = document.getElementById('player_2_weapon_image');
+const player1WeaponImage = document.getElementById('player_1_weapon_image');
+const player2WeaponImage = document.getElementById('player_2_weapon_image');
 const gameContainer = document.getElementById('game-container');
 // get fight buttons
 const attack1 = document.getElementById('attack1');
@@ -17,7 +24,7 @@ const defend1 = document.getElementById('defend1');
 
 const attack2 = document.getElementById('attack2');
 const defend2 = document.getElementById('defend2');
-const btnsArray = [attack1, defend1, attack2, defend2];
+const ButtonsArray = [attack1, defend1, attack2, defend2];
 // store all the weapons and their power
 
 // default and the main weapon for each player
@@ -465,10 +472,10 @@ class Game {
 		// update the player status
 		if (this.currentPlayer.title === this.players[0].title) {
 			Player1PowerElement.innerHTML = elementBox.weapon.power;
-			player1WepaonImage.src = `./assets/${elementBox.weapon.name}.png`
+			player1WeaponImage.src = `./assets/${elementBox.weapon.name}.png`
 		} else {
 			Player2PowerElement.innerHTML = elementBox.weapon.power;
-			player2WepaonImage.src = `./assets/${elementBox.weapon.name}.png`
+			player2WeaponImage.src = `./assets/${elementBox.weapon.name}.png`
 
 		}
 
@@ -493,7 +500,7 @@ class Game {
 		// change player fight turn
 		this.changeFightTurns();
 		// display the buttons
-		btnsArray.forEach((btn) => btn.classList.remove('fight'));
+		ButtonsArray.forEach((btn) => btn.classList.remove('fight'));
 		//
 
 	};
@@ -571,10 +578,10 @@ class Game {
 	}
 	checkForWinning() {
 		if (this.players[0].health <= 0) {
-			this.announcePlayer(this.players[1].name);
+			this.announcePlayer(player2Name);
 		}
 		if (this.players[1].health <= 0) {
-			this.announcePlayer(this.players[0].name);
+			this.announcePlayer(player1Name);
 		}
 	}
 	announcePlayer(name) {

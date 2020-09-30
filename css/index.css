@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+.power-weapons {
+    display: flex;
+    flex-direction: row;
+    background: #cfd5d9;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    width: max-content;
+}
+.power-weapons > p {
+    margin-left: 20px;
+}
+.power-weapons > img {
+    width: 100px;
+    height: 100px;
+}

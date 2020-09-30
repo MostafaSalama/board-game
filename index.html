@@ -3,23 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>Welcome To The Most Simple And Funny Turn Board Game</title>
-    <style>
-        body {
-            text-align: center;
-        }
-        div > a {
-            font-size: 40px;
-            text-decoration: none;
-            background-color: #0c5460;
-            color:antiquewhite ;
-            padding: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
 <h1>Would you like to play now</h1>
 <div>
-    <a href="./game.html">Click Me To Start Playing</a>
+    <label for="player1_name">Player 1 Name</label>
+    <input type="text" name="player1_name" id="player1_name" value="player 1" />
+</div>
+<div>
+    <label for="player2_name">Player 2 Name</label>
+    <input type="text" name="player1_name" id="player2_name" value="player 2" />
+</div>
+<h2>Game Rules</h2>
+<ul>
+    <li>Each player can move 3 spaces horizontally or vertically.</li>
+    <li>To Increase Your Power Take Weapons</li>
+    <li>The current and the default weapon has a power of 10</li>
+    <li> Weapons Power
+        <div class="power-weapons">
+            <p>20</p>
+            <img src="./assets/weapon1.png" alt="weapon 1"/>
+            <p>35</p>
+            <img src="./assets/weapon4.png" alt="weapon 4">
+            <p>50</p>
+            <img src="./assets/weapon2.png" alt="weapon 2">
+            <p>70</p>
+            <img src="./assets/weapon3.png" alt="weapon 3">
+        </div>
+    </li>
+</ul>
+<div>
 </div>
 </body>
 </html>

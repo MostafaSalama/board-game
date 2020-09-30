@@ -10,7 +10,6 @@ const Player2PowerElement = document.querySelector('#power2');
 // const Player2WeaponElement = document.querySelector("#weapon2");
 
 const gameContainer = document.getElementById('game-container');
-const gameFight_bg = document.getElementById('fight-bg');
 // get fight buttons
 const attack1 = document.getElementById('attack1');
 const defend1 = document.getElementById('defend1');
@@ -492,11 +491,7 @@ class Game {
 		// display the buttons
 		btnsArray.forEach((btn) => btn.classList.remove('fight'));
 		//
-		gameFight_bg.classList.remove('fightbg-false');
-		gameFight_bg.classList.add('fight__bg1');
 
-		// play background sound
-		this.makeSound('bgTrack01.mp3');
 	};
 
 	// attack

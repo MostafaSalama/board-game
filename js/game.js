@@ -564,12 +564,16 @@ class Game {
 				: this.players[0];
 
 		if (this.currentPlayer.title === 'player1') {
+			document.getElementById('player1').classList.add('current_player');
+			document.getElementById('player2').classList.remove('current_player');
 			attack1.disabled = false;
 			defend1.disabled = false;
 			attack2.disabled = true;
 			defend2.disabled = true;
 		}
 		if (this.currentPlayer.title === 'player2') {
+			document.getElementById('player2').classList.add('current_player');
+			document.getElementById('player1').classList.remove('current_player');
 			attack1.disabled = true;
 			defend1.disabled = true;
 			attack2.disabled = false;

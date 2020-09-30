@@ -147,5 +147,6 @@ img {
 #game-over > svg {
   width: 500px;
 }
-
-/*# sourceMappingURL=style.css.map */
+.current_player {
+  border: 5px dotted #fea;
+}

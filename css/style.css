@@ -103,7 +103,9 @@ nav a:hover {
 .fight {
   display: none;
 }
-
+.box-hover {
+  background-color: antiquewhite;
+}
 .box-hover:hover {
   background-color: #1c7430;
   cursor: pointer;

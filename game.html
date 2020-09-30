@@ -12,45 +12,48 @@
       <a class="navbar-brand" href="index.html">Main</a>
       <a class="navbar-brand mr-1" href="./game.html">Restart</a>
     </nav>
-    <main role="main" class="container-fluid mt-5 main-conatiner">
-      <div class="row">
-        <div class="col-md-2">
-          <div id="player1" class="player player__one bg-primary mr-2">
-            <p class="player1">player 1</p>
+    <main  class="">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-2">
+            <div id="player1" class="player player__one  mr-2">
+              <h2 class="player1">player 1</h2>
 
-            <p class="score">health: <span id="health1"></span></p>
-            <p class="score">power: <span id="power1"></span></p>
+              <p class="score">health: <span id="health1"></span></p>
+              <p class="score">power: <span id="power1"></span></p>
 
-            <img
-              src="./assets/mikasa.png"
-              class="player__icon"
-              alt="player 1"
-            />
-            <div class="mt-4">
-              <button id="attack1" class="fight btn btn-danger">Attack</button>
-              <button id="defend1" class="fight btn btn-warning">Defend</button>
+              <img
+                      src="./assets/witch.png"
+                      class="player__icon"
+                      alt="player 1"
+              />
+              <div class="mt-4">
+                <button id="attack1" class="fight btn btn-danger">Attack</button>
+                <button id="defend1" class="fight btn btn-warning">Defend</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="game-app">
+              <div class="game-container" id="game-container"></div>
+            </div>
+          </div>
+
+          <div class="col-md-2">
+            <div id="player2" class="player player__two mx-2">
+              <h2 class="player1">player 2</h2>
+              <p class="score">health: <span id="health2"></span></p>
+              <p class="score">power: <span id="power2"></span></p>
+
+              <img src="./assets/thermometer.png" class="player__icon" alt="player 2" />
+              <div class="mt-4">
+                <button id="attack2" class="fight btn btn-danger">Attack</button>
+                <button id="defend2" class="fight btn btn-warning">Defend</button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-8">
-          <div class="game-app">
-            <div class="game-container" id="game-container"></div>
-          </div>
-        </div>
 
-        <div class="col-md-2">
-          <div id="player2" class="player player__two bg-danger mx-2">
-            <p class="player1">player 2</p>
-            <p class="score">health: <span id="health2"></span></p>
-            <p class="score">power: <span id="power2"></span></p>
-
-            <img src="./assets/levay.png" class="player__icon" alt="player 2" />
-            <div class="mt-4">
-              <button id="attack2" class="fight btn btn-danger">Attack</button>
-              <button id="defend2" class="fight btn btn-warning">Defend</button>
-            </div>
-          </div>
-        </div>
       </div>
     </main>
     <section id="game-over">

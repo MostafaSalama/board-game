@@ -6,9 +6,10 @@ const player1StatusSection = document.getElementById('player1');
 const player2StatusSection = document.getElementById('player2');
 const Player1PowerElement = document.querySelector('#power1');
 const Player2PowerElement = document.querySelector('#power2');
-// const Player1WeaponElement = document.querySelector("#weapon1");
-// const Player2WeaponElement = document.querySelector("#weapon2");
 
+// player 1 and 2 weapons images
+const player1WepaonImage = document.getElementById('player_1_weapon_image');
+const player2WepaonImage = document.getElementById('player_2_weapon_image');
 const gameContainer = document.getElementById('game-container');
 // get fight buttons
 const attack1 = document.getElementById('attack1');
@@ -464,8 +465,11 @@ class Game {
 		// update the player status
 		if (this.currentPlayer.title === this.players[0].title) {
 			Player1PowerElement.innerHTML = elementBox.weapon.power;
+			player1WepaonImage.src = `./assets/${elementBox.weapon.name}.png`
 		} else {
 			Player2PowerElement.innerHTML = elementBox.weapon.power;
+			player2WepaonImage.src = `./assets/${elementBox.weapon.name}.png`
+
 		}
 
 		elementBox.element.classList.remove(elementBox.weapon.name);

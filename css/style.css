@@ -21,9 +21,9 @@ img {
   text-align: center;
   border-radius: 10px;
   padding: 5px;
-  height: 80%;
+  height: 90%;
   margin-top: 10%;
-  background-color: #4e555b;
+  background-color: #673ab7;
 }
 .player >  h2 {
   font-size: 20px;
@@ -72,27 +72,27 @@ img {
 }
 
 .main {
-  background-image: url("./../assets/halloween.png");
+  background-image: url("./../assets/main.png");
   background-size: cover;
 }
 
 .weapon1 {
-  background-image: url("./../assets/sword.png");
+  background-image: url("./../assets/weapon1.png");
   background-size: cover;
 }
 
 .weapon2 {
-  background-image: url("./../assets/sword2.png");
+  background-image: url("./../assets/weapon2.png");
   background-size: cover;
 }
 
 .weapon3 {
-  background-image: url("./../assets/big-sword.png");
+  background-image: url("./../assets/weapon3.png");
   background-size: cover;
 }
 
 .weapon4 {
-  background-image: url("./../assets/spear.png");
+  background-image: url("./../assets/weapon4.png");
   background-size: cover;
 }
 

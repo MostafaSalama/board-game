@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 nav {
   background: url("./../assets/flash-2568383_1920.jpg");
 }
@@ -26,7 +27,8 @@ img {
   background-color: #673ab7;
 }
 .player >  h2 {
-  font-size: 20px;
+  font-family: 'Pacifico', cursive;
+  font-size: 30px;
   color:white;
   font-style: italic;
   font-weight: bolder;

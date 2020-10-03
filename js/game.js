@@ -29,11 +29,7 @@ const ButtonsArray = [attack1, defend1, attack2, defend2];
 
 
 
-class ItemTypes {
-	static PLAYER = 'PLAYER';
-	static OBSTACLE = 'OBSTACLE';
-	static WEAPON = 'WEAPON';
-}
+
 
 const actionTypes = {
 	DEFEND: 'DEFEND',

@@ -1,3 +1,29 @@
+// store all the weapons and their power
+
+// default and the main weapon for each player
+const defaultWeapon = {
+    name: 'main',
+    power: 10,
+};
+
+const weapons = [
+    {
+        name: 'weapon1',
+        power: 20,
+    },
+    {
+        name: 'weapon2',
+        power: 50,
+    },
+    {
+        name: 'weapon3',
+        power: 70,
+    },
+    {
+        name: 'weapon4',
+        power: 35,
+    },
+];
 class Weapon {
     /**
      * @param name {string} the weapon name used for css classes

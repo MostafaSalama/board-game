@@ -25,32 +25,7 @@ const defend1 = document.getElementById('defend1');
 const attack2 = document.getElementById('attack2');
 const defend2 = document.getElementById('defend2');
 const ButtonsArray = [attack1, defend1, attack2, defend2];
-// store all the weapons and their power
 
-// default and the main weapon for each player
-const defaultWeapon = {
-	name: 'main',
-	power: 10,
-};
-
-const weapons = [
-	{
-		name: 'weapon1',
-		power: 20,
-	},
-	{
-		name: 'weapon2',
-		power: 50,
-	},
-	{
-		name: 'weapon3',
-		power: 70,
-	},
-	{
-		name: 'weapon4',
-		power: 35,
-	},
-];
 
 
 

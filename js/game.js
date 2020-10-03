@@ -388,7 +388,7 @@ class Game {
 	// setup Ui for the fight
 	uiFightGround = () => {
 		// clear the map
-		gameContainer.innerHTML = '';
+		document.getElementById('fight-container').style.display = 'initial' ;
 		// change player fight turn
 		this.changeFightTurns();
 		// display the buttons

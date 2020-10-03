@@ -49,6 +49,7 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  position: relative;
 }
 .game-container {
   background-color: #fff;
@@ -149,4 +150,27 @@ img {
 }
 .current_player {
   border: 5px dotted #fea;
+}
+#fight-container {
+  display: none;
+}
+.fight-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(234, 229, 229);
+  opacity: 0.5;
+}
+.fight-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  color: #4300b8;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: bolder;
+
 }

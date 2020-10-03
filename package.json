@@ -1,0 +1,23 @@
+{
+  "name": "board-game",
+  "version": "1.0.0",
+  "description": "A simple turn-based board game",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start -s './src' -f './src' --no-notify --no-ui"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MostafaSalama/board-game.git"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.12"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MostafaSalama/board-game/issues"
+  },
+  "homepage": "https://github.com/MostafaSalama/board-game#readme"
+}
